@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@500;700 & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Fraunces:opsz,wght@9..144,700 & display=swap');
+
+
+
+:root{
+  
+    --Dark: hsl(158, 36%, 37%);
+   --Cream: hsl(30, 38%, 92%);
+
+    --Very: hsl(212, 21%, 14%);
+    --Darkgrayish: hsl(228, 12%, 48%);
+    --White1: hsl(0, 0%, 100%);
+
+    --fontM-family: 'Montserrat', sans-serif;
+    
+    --fontF-family: 'Fraunces', serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--fontF-family);
+    background-color: var(--Cream);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+
+    
+
+}
+.card{
+    border-radius: 10px;
+    max-width: 666px;
+    display: flex;
+    margin: 0 1rem;
+    background-color: var(--White1);
+    margin: auto;
+
+}
+
+.img_cont{
+    width: 50%;
+}
+
+.img_cont img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.right{
+    width: 50%;
+    padding: 2rem;
+
+}
+.right .nome{
+    color: var(--Very);
+    padding-right: 2rem;
+    margin-bottom: 1.75rem;
+}
+
+.right .descrition{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color:var(--Darkgrayish);
+    line-height: 22px;
+    margin-bottom: 1.75rem;
+}
+
+.parag{
+    font-family: var(--fontM-family);
+    letter-spacing: 3px;
+    color: var(--Darkgrayish);
+    margin-bottom: 1.75rem;
+}
+
+.precos{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.75rem;
+}
+
+.novo{
+    color:hsl(158, 36%, 37%)
+}
+
+.antigo{
+    font-family: var(--fontM-family);
+    color: var(--Darkgrayish);
+    text-decoration: line-through;
+}
+
+.botao{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color:hsl(158, 36%, 37%) ;
+    color: var(--White1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--fontM-family);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor:pointer
+
+}
+
+.botao:hover{
+    background-color:hsl(212, 21%, 14%) ;
+}
+
+@media only screen and (max-width:550px){
+    .card{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .img_cont{
+        width: 100%;
+        height: 40%;
+    
+    }
+
+    .img_cont img{
+        content: url(/images/image-product-mobile.jpg);
+    }
+
+    .card{
+        flex-direction: column;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .nome{
+        padding: 0;
+    }
+    .img_cont img{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+}
+
+

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+:root{
+    --cor: #52D4FF;
+    --cor0: #05C1FF;
+    --cor1: #5277FF;
+    --cor2: #053BFF;
+    --cor3: #0431CC;
+    --cor4: #031E80;
+    --fonte-padrao: Arial, verdana,Helvetica,sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android:  'android', cursive;
+}
+nav{
+    background-color: var(--cor4);
+    padding: 10px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+
+}
+nav a:hover{
+    text-decoration: underline;
+    background-color: var(--cor1);
+    color: var(--cor);
+}
