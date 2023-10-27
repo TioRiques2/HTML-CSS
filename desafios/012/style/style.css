@@ -6,3 +6,64 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html,body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p{
+    padding-bottom: 50px;
+    
+}
+
+a{
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section.normal{
+    background-color: #ffffff;
+    color: #000000;
+
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.514);
+    color: #ffffff;
+}
+
+section.imagem > p{
+    width: 400px;
+    background-color: #00000042;
+    color: #ffffff;
+}
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
