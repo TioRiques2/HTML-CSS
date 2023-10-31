@@ -5,9 +5,19 @@ body{
 }
 
 table{
-    width: 500px;
+    max-width: 600px;
     border-collapse: collapse;
     margin: 0 auto;
+}
+
+caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #80808077;
+}
+
+tbody > tr:nth-child(2n){
+    background-color: lightgray;
 }
 
 td, th{
